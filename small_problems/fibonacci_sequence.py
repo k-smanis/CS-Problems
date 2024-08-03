@@ -7,7 +7,8 @@ class InvalidFibonacciInput(Exception):
 
 
 def fib(N: int, memo={1: 1, 2: 2}):
-    """This function calculates the N-th number of the fibonacci sequence"""
+    """This function calculates the N-th number of the fibonacci sequence.
+    This implementation uses memoization to avoid duplicate computation of sub-trees."""
     if N < 1:
         raise InvalidFibonacciInput()
 
